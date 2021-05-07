@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/tvAmt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/amount" />
+
+    <EditText
+        android:id="@+id/etAmt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Enter Amount"
+        android:inputType="number" />
+
+    <TextView
+        android:id="@+id/tvPax"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/num_of_pax" />
+
+    <EditText
+        android:id="@+id/etPax"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Enter Number Of People"
+        android:inputType="number" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <ToggleButton
+            android:id="@+id/nosvs"
+            android:layout_width="205dp"
+            android:layout_height="wrap_content"
+            android:text="@string/no_svs"
+            android:textOff="NO SVS"
+            android:textOn="Enabled" />
+
+        <ToggleButton
+            android:id="@+id/gst"
+            android:layout_width="205dp"
+            android:layout_height="wrap_content"
+            android:text="@string/gst"
+            android:textOff="GST"
+            android:textOn="Enabled" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tvDisc"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/discount" />
+
+    <EditText
+        android:id="@+id/etDisc"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="@string/enter_discount_amount"
+        android:inputType="number" />
+
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="92dp"
+            android:id="@+id/rg">
+
+            <RadioButton
+                android:id="@+id/rbCash"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/cash"
+                android:checked="true"/>
+
+            <RadioButton
+                android:id="@+id/rbPaynow"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/paynow" />
+        </RadioGroup>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <ToggleButton
+            android:id="@+id/tbSplit"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/split"
+            android:textOff="SPLIT"
+            android:textOn="Enabled" />
+
+        <ToggleButton
+            android:id="@+id/tbReset"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/reset"
+            android:textOff="RESET"
+            android:textOn="Enabled" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/totalBill"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text=""/>
+
+    <TextView
+        android:id="@+id/eachPay"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text=""/>
+</LinearLayout>
+
